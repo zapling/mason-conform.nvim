@@ -1,6 +1,6 @@
 # mason-conform.nvim
 
-Bridge the gap between `mason` and `conform`.
+Auto install formatters registered with `conform.nvim` via [Mason](https://github.com/williamboman/mason.nvim).
 
 # Install
 
@@ -31,5 +31,5 @@ require("mason-conform").setup()
 
 # License
 
-`mason-conform.nvim` is a blatant copy of (mason-nvim-lint)[https://github.com/rshkarin/mason-nvim-lint] 
-which in turn takes heavy insperation from (mason-lspconfig.nvim)[https://github.com/williamboman/mason-lspconfig.nvim]
+`mason-conform.nvim` is a blatant copy of [mason-nvim-lint](https://github.com/rshkarin/mason-nvim-lint) 
+which in turn takes heavy insperation from [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)

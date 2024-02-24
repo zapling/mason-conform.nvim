@@ -29,6 +29,12 @@ access the mason registry.
 require("mason-conform").setup()
 ```
 
+# Available formatters
+
+Only formatters that are available in the [mason registry](https://github.com/mason-org/mason-registry)
+can be downloaded automatically. If the formatter is available in the registry and it's not being
+downloaded, this plugin might be missing a `conform` => `mason` mapping in the file [lua/mason-conform/mapping.lua](lua/mason-conform/mapping.lua).
+
 # License
 
 `mason-conform.nvim` is a blatant copy of [mason-nvim-lint](https://github.com/rshkarin/mason-nvim-lint) 

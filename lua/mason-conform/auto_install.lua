@@ -7,7 +7,15 @@ local function auto_install()
     local formatters_to_install = {}
     for _, formatters in pairs(formatters_by_ft) do
         for _, formatter in pairs(formatters) do
-            formatters_to_install[formatter] = 1
+            -- Support case where the user has defined multiple formatters
+            -- for said filetype. E.g javascript = { { "prettierd", "prettier" } }
+            if type(formatter) == "table" then
+                for _, f in pairs(formatter) do
+                    formatters_to_install[f] = 1
+                end
+            else
+                formatters_to_install[formatter] = 1
+            end
         end
     end
 

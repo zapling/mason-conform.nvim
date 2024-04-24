@@ -96,7 +96,7 @@ M.conform_to_package = {
     ["ruff_fix"] = "ruff",
     ["ruff_format"] = "ruff",
     ["rufo"] = "rufo",
-    ["rustfmt"] = "rustfmt",
+    -- ["rustfmt"] = "rustfmt", Deprecated by mason
     ["rustywind"] = "rustywind",
     -- scalafmt
     ["shellcheck"] = "shellcheck",

@@ -26,7 +26,9 @@ access the mason registry.
 # Configuration
 
 ```lua
-require("mason-conform").setup()
+require("mason-conform").setup({
+    ignore_install = {'prettier'} -- List of formatters to ignore during install
+})
 ```
 
 # Available formatters

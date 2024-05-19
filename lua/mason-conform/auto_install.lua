@@ -25,8 +25,6 @@ local function auto_install()
         formatters_to_install[formatter_to_ignore] = nil
     end
 
-    print(vim.inspect(formatters_to_install))
-
     for conformFormatter, _ in pairs(formatters_to_install) do
         local package = mapping.conform_to_package[conformFormatter]
         if package ~= nil then

@@ -23,7 +23,7 @@ M.conform_to_package = {
     ["buf"] = "buf",
     ["buildifier"] = "buildifier",
     ["cbfmt"] = "cbfmt",
-    ["clang_format"] = "clang-format",
+    ["clang-format"] = "clang-format",
     -- cljstyle
     ["cmake_format"] = "cmakelang",
     ["codespell"] = "codespell",

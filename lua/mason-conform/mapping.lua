@@ -74,7 +74,7 @@ M.conform_to_package = {
     -- nixfmt
     ["nixpkgs_fmt"] = "nixpkgs-fmt",
     ["ocamlformat"] = "ocamlformat",
-    -- opa_fmt
+    ["opa_fmt"] = "opa",
     -- packer_fmt
     -- pangu
     -- perlimports

@@ -1,6 +1,6 @@
 # mason-conform.nvim
 
-Auto install formatters registered with `conform.nvim` via [Mason](https://github.com/williamboman/mason.nvim).
+Automatically install formatters registered with [conform.nvim](https://github.com/stevearc/conform.nvim) via [Mason](https://github.com/williamboman/mason.nvim).
 
 # Install
 

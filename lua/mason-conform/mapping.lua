@@ -4,8 +4,8 @@ local M = {}
 -- https://mason-registry.dev/registry/list
 M.conform_to_package = {
     -- air
-    -- alejandra
-    -- ansible-lint
+    ["alejandra"] = "alejandra",
+    ["ansible-lint"] = "ansible-lint",
     ["asmfmt"] = "asmfmt",
     ["ast-grep"] = "ast-grep",
     -- astyle
@@ -16,7 +16,7 @@ M.conform_to_package = {
     -- bean-format
     ["beautysh"] = "beautysh",
     ["bibtex-tidy"] = "bibtex-tidy",
-    -- bicep
+    -- bicep; it exists on Mason, but as LSP (exec: `bicep-lsp`)
     ["biome"] = "biome",
     -- biome-check
     -- biome-organize-imports
@@ -24,20 +24,20 @@ M.conform_to_package = {
     ["blade-formatter"] = "blade-formatter",
     ["blue"] = "blue",
     -- bpfmt
-    -- bsfmt
+    ["bsfmt"] = "brighterscript-formatter",
     ["buf"] = "buf",
     ["buildifier"] = "buildifier",
     -- cabal_fmt
     -- caramel_fmt
     ["cbfmt"] = "cbfmt",
     ["clang-format"] = "clang-format",
-    -- cljfmt
+    ["cljfmt"] = "cljfmt",
     -- cljstyle
     ["cmake_format"] = "cmakelang",
-    -- codeql
+    -- codeql; it exists on Mason, but as LSP (exec: `codeql`)
     ["codespell"] = "codespell",
     -- commitmsgfmt
-    -- crlfmt
+    ["crlfmt"] = "crlfmt",
     -- crystal
     ["csharpier"] = "csharpier",
     -- css_beautify
@@ -45,23 +45,23 @@ M.conform_to_package = {
     -- d2
     ["darker"] = "darker",
     -- dart_format
-    -- dcm_fix
-    -- dcm_format
+    ["dcm_fix"] = "dcm",
+    ["dcm_format"] = "dcm",
     ["deno_fmt"] = "deno",
     -- dfmt
     ["djlint"] = "djlint",
-    -- docformatter
+    ["docformatter"] = "docformatter",
     -- docstrfmt
-    -- doctoc
+    ["doctoc"] = "doctoc",
     ["dprint"] = "dprint",
     ["easy-coding-standard"] = "easy-coding-standard",
     -- efmt
     ["elm_format"] = "elm-format",
-    -- erb_format
+    ["erb_format"] = "erb-formatter",
     -- erlfmt
     ["eslint_d"] = "eslint_d",
     ["fantomas"] = "fantomas",
-    -- findent
+    ["findent"] = "findent",
     -- fish_indent
     ["fixjson"] = "fixjson",
     -- fnlfmt
@@ -69,7 +69,7 @@ M.conform_to_package = {
     -- format-dune-file
     -- format-queries
     ["fourmolu"] = "fourmolu",
-    -- fprettify
+    ["fprettify"] = "fprettify",
     -- gawk
     ["gci"] = "gci",
     ["gdformat"] = "gdtoolkit",
@@ -85,7 +85,7 @@ M.conform_to_package = {
     ["golines"] = "golines",
     ["google-java-format"] = "google-java-format",
     -- grain_format
-    -- hcl
+    ["hcl"] = "hclfmt",
     -- hindent
     -- html_beautify
     ["htmlbeautifier"] = "htmlbeautifier",
@@ -101,38 +101,38 @@ M.conform_to_package = {
     -- js_beautify
     ["jsonnetfmt"] = "jsonnetfmt",
     -- just
-    -- kcl
+    ["kcl"] = "kcl",
     -- kdlfmt
-    -- ktfmt
+    ["ktfmt"] = "ktfmt",
     ["ktlint"] = "ktlint",
-    -- kulala-fmt
+    ["kulala-fmt"] = "kulala-fmt",
     ["latexindent"] = "latexindent",
     -- leptosfmt
     -- liquidsoap-prettier
     -- llf
-    -- lua-format
+    ["lua-format"] = "luaformatter",
     ["markdown-toc"] = "markdown-toc",
     -- markdownfmt
     ["markdownlint"] = "markdownlint",
     ["markdownlint-cli2"] = "markdownlint-cli2",
     ["mdformat"] = "mdformat",
-    -- mdsf
+    ["mdsf"] = "mdsf",
     ["mdslw"] = "mdslw",
     -- mix
     -- mojo_format
     -- nginxfmt
-    -- nickel
+    -- nickel; it exists on Mason, but as LSP (exec: `nls`)
     -- nimpretty
     -- nixfmt
     ["nixpkgs_fmt"] = "nixpkgs-fmt",
     -- nomad_fmt
     -- nph
-    -- npm-groovy-lint
+    ["npm-groovy-lint"] = "npm-groovy-lint",
     -- nufmt
     ["ocamlformat"] = "ocamlformat",
     -- ocp-indent
     ["opa_fmt"] = "opa",
-    -- ormolu
+    ["ormolu"] = "ormolu",
     -- packer_fmt
     -- pangu
     -- perlimports
@@ -145,13 +145,13 @@ M.conform_to_package = {
     ["prettier"] = "prettier",
     ["prettierd"] = "prettierd",
     ["pretty-php"] = "pretty-php",
-    -- prettypst
+    ["prettypst"] = "prettypst",
     -- puppet-lint
-    -- purs-tidy
-    -- pyink
+    ["purs-tidy"] = "purescript-tidy",
+    ["pyink"] = "pyink",
     -- pyproject-fmt
     -- python-ly
-    -- reformat-gherkin
+    ["reformat-gherkin"] = "reformat-gherkin",
     ["reorder-python-imports"] = "reorder-python-imports",
     -- rescript-format
     -- roc
@@ -160,7 +160,7 @@ M.conform_to_package = {
     ["rubyfmt"] = "rubyfmt",
     ["ruff_fix"] = "ruff",
     ["ruff_format"] = "ruff",
-    -- ruff_organize_imports
+    ["ruff_organize_imports"] = "ruff",
     ["rufo"] = "rufo",
     -- runic
     -- ["rustfmt"] = "rustfmt", Deprecated by mason
@@ -169,9 +169,9 @@ M.conform_to_package = {
     ["shellcheck"] = "shellcheck",
     ["shellharden"] = "shellharden",
     ["shfmt"] = "shfmt",
-    -- sleek
+    ["sleek"] = "sleek",
     -- smlfmt
-    -- snakefmt
+    ["snakefmt"] = "snakefmt",
     ["sql_formatter"] = "sql-formatter",
     ["sqlfluff"] = "sqlfluff",
     ["sqlfmt"] = "sqlfmt",
@@ -184,28 +184,28 @@ M.conform_to_package = {
     -- styler
     -- stylish-haskell
     ["stylua"] = "stylua",
-    -- superhtml
+    ["superhtml"] = "superhtml",
     -- swift_format
     -- swiftformat
-    -- swiftlint
+    ["swiftlint"] = "swiftlint",
     -- syntax_tree
     ["taplo"] = "taplo",
     ["templ"] = "templ",
     -- terraform_fmt
     -- terragrunt_hclfmt
-    -- tex-fmt
+    ["tex-fmt"] = "tex-fmt",
     ["tlint"] = "tlint",
     -- tofu_fmt
     -- trim_newlines
     -- trim_whitespace
-    -- twig-cs-fixer
+    ["twig-cs-fixer"] = "twig-cs-fixer",
     ["typos"] = "typos",
     -- typstyle
     -- ufmt
     -- uncrustify
     ["usort"] = "usort",
-    -- verible
-    -- vsg
+    ["verible"] = "verible",
+    ["vsg"] = "vsg",
     ["xmlformat"] = "xmlformatter", -- Deprecated in conform.nvim; redirects to xmlformatter
     ["xmlformatter"] = "xmlformatter",
     -- xmllint

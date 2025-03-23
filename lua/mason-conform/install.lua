@@ -42,6 +42,11 @@ function M.try_install(mason_package_name)
         :if_present(
             function(pkg)
                 if not pkg:is_installed() then
+                    if require("mason.version").MAJOR_VERSION == 2 then
+                        if pkg:is_installing() then
+                            return
+                        end
+                    end
                     install_package(pkg, version)
                 end
             end

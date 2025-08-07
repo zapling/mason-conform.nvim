@@ -3,7 +3,7 @@ local M = {}
 -- conform formatter to mason package mapping
 -- https://mason-registry.dev/registry/list
 M.conform_to_package = {
-    -- air
+    ["air"] = "air",
     ["alejandra"] = "alejandra",
     ["ansible-lint"] = "ansible-lint",
     ["asmfmt"] = "asmfmt",
@@ -85,7 +85,7 @@ M.conform_to_package = {
     ["goimports"] = "goimports",
     ["goimports-reviser"] = "goimports-reviser",
     -- gojq
-    -- golangci-lint
+    ["golangci-lint"] = "golangci-lint",
     ["golines"] = "golines",
     ["google-java-format"] = "google-java-format",
     -- grain_format
@@ -108,7 +108,7 @@ M.conform_to_package = {
     ["jsonnetfmt"] = "jsonnetfmt",
     -- just
     ["kcl"] = "kcl",
-    -- kdlfmt
+    ["kdlfmt"] = "kdlfmt",
     -- keep-sorted
     ["ktfmt"] = "ktfmt",
     ["ktlint"] = "ktlint",
@@ -132,9 +132,9 @@ M.conform_to_package = {
     -- nginxfmt
     -- nickel; it exists on Mason, but as LSP (exec: `nls`)
     -- nimpretty
-    -- nixfmt
+    ["nixfmt"] = "nixfmt",
     ["nixpkgs_fmt"] = "nixpkgs-fmt",
-    -- nomad_fmt
+    ["nomad_fmt"] = "nomad",
     -- nph
     ["npm-groovy-lint"] = "npm-groovy-lint",
     -- nufmt
@@ -160,7 +160,7 @@ M.conform_to_package = {
     ["purs-tidy"] = "purescript-tidy",
     -- pycln
     ["pyink"] = "pyink",
-    -- pyproject-fmt
+    ["pyproject-fmt"] = "pyproject-fmt",
     -- python-ly
     -- pyupgrade
     ["reformat-gherkin"] = "reformat-gherkin",
@@ -187,7 +187,7 @@ M.conform_to_package = {
     ["sql_formatter"] = "sql-formatter",
     ["sqlfluff"] = "sqlfluff",
     ["sqlfmt"] = "sqlfmt",
-    -- sqruff
+    ["sqruff"] = "sqruff",
     -- squeeze_blanks
     -- standard-clj
     ["standardjs"] = "standardjs",
@@ -204,12 +204,12 @@ M.conform_to_package = {
     -- syntax_tree
     ["taplo"] = "taplo",
     ["templ"] = "templ",
-    -- terraform_fmt
+    ["terraform_fmt"] = "terraform",
     -- terragrunt_hclfmt
     ["tex-fmt"] = "tex-fmt",
     ["tlint"] = "tlint",
     -- tofu_fmt
-    -- tombi
+    ["tombi"] = "tombi",
     -- treefmt
     -- trim_newlines
     -- trim_whitespace
